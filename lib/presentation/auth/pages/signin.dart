@@ -1,5 +1,7 @@
+import 'package:clothing_ecommerce_app/common/helper/navigator/app_navigator.dart';
 import 'package:clothing_ecommerce_app/common/widgets/basic_app_button.dart';
 import 'package:clothing_ecommerce_app/common/widgets/custom_text_field.dart';
+import 'package:clothing_ecommerce_app/presentation/auth/pages/enter_password.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
@@ -21,7 +23,12 @@ class SigninPage extends StatelessWidget {
             SizedBox(height: 24),
             CustomTextField(hint: 'Enter Email'),
             SizedBox(height: 24),
-            BasicAppButton(onPressed: () {}, title: 'Continue'),
+            BasicAppButton(
+              onPressed: () {
+                AppNavigator.pushReplacement(context, EnterPasswordPage());
+              },
+              title: 'Continue',
+            ),
             SizedBox(height: 24),
             CreateAccount(),
           ],
@@ -39,9 +46,9 @@ class CreateAccount extends StatelessWidget {
     return RichText(
       text: TextSpan(
         children: [
-          TextSpan(text: "You don't have an account? "),
+          TextSpan(text: "Forgot password? "),
           TextSpan(
-            text: "Create one",
+            text: "Reset",
             style: TextStyle(fontWeight: FontWeight.bold),
             recognizer: TapGestureRecognizer()..onTap = () {},
           ),

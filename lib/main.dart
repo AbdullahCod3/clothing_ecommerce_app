@@ -1,4 +1,5 @@
 import 'package:clothing_ecommerce_app/core/configs/theme/app_theme.dart';
+import 'package:clothing_ecommerce_app/presentation/splash/pages/splash.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +14,7 @@ class ClothingApp extends StatelessWidget {
     return MaterialApp(
       theme: AppTheme.appTheme,
       debugShowCheckedModeBanner: false,
-      home: const Scaffold(),
+      home: const SplashPage(),
     );
   }
 }

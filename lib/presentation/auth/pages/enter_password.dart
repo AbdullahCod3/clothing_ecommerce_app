@@ -1,10 +1,10 @@
 import 'package:clothing_ecommerce_app/common/widgets/basic_app_button.dart';
 import 'package:clothing_ecommerce_app/common/widgets/custom_text_field.dart';
-import 'package:flutter/gestures.dart';
+import 'package:clothing_ecommerce_app/presentation/auth/pages/signin.dart';
 import 'package:flutter/material.dart';
 
-class SigninPage extends StatelessWidget {
-  const SigninPage({super.key});
+class EnterPasswordPage extends StatelessWidget {
+  const EnterPasswordPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -19,33 +19,13 @@ class SigninPage extends StatelessWidget {
               style: TextStyle(fontSize: 32, fontWeight: FontWeight.bold),
             ),
             SizedBox(height: 24),
-            CustomTextField(hint: 'Enter Email'),
+            CustomTextField(hint: 'Enter Password'),
             SizedBox(height: 24),
             BasicAppButton(onPressed: () {}, title: 'Continue'),
             SizedBox(height: 24),
             CreateAccount(),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class CreateAccount extends StatelessWidget {
-  const CreateAccount({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return RichText(
-      text: TextSpan(
-        children: [
-          TextSpan(text: "You don't have an account? "),
-          TextSpan(
-            text: "Create one",
-            style: TextStyle(fontWeight: FontWeight.bold),
-            recognizer: TapGestureRecognizer()..onTap = () {},
-          ),
-        ],
       ),
     );
   }

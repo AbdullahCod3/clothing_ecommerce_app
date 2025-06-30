@@ -4,12 +4,11 @@ import 'package:clothing_ecommerce_app/common/widgets/basic_app_button.dart';
 import 'package:clothing_ecommerce_app/common/widgets/custom_link_text.dart';
 import 'package:clothing_ecommerce_app/common/widgets/custom_text_field.dart';
 import 'package:clothing_ecommerce_app/presentation/auth/pages/enter_password.dart';
-import 'package:clothing_ecommerce_app/presentation/auth/pages/signup.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
-class SigninPage extends StatelessWidget {
-  const SigninPage({super.key});
+class SignupPage extends StatelessWidget {
+  const SignupPage({super.key});
 
   @override
   Widget build(BuildContext context) {
